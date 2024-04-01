@@ -2,6 +2,7 @@
 ---
 
 sau khi tải file về thì ta thấy rằng đây là 1 file packed vì vậy ta cần unpack nó trước, ta sẽ unpack bằng upx
+
 ![image](https://github.com/fuyosuru/Writeup/assets/150824829/f3ccb119-45a1-4ccd-842c-8d80643f289f)
 
 sau đó ta sẽ mở file đã unpack này trong IDA
