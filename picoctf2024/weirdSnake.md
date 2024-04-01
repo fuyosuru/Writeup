@@ -145,19 +145,19 @@ Disassembly of <code object <listcomp> at 0x7f0be3d36df0, file "snake.py", line 
 
 Đây là Python bytecode. Đầu tiên ta có một mảng chứa các giá trị thập phân 
 
-```python=
+```python
 input_list = [4, 54, 41, 0, 112, 32, 25, 49, 33, 3, 0, 0, 57, 32, 108, 23, 48, 4, 9, 70, 7, 110, 36, 8, 108, 7, 49, 10, 4, 86, 43, 105, 114, 91, 0, 71, 106, 124, 93, 78]
 ```
 
 Sau đó là string key_str
 
-```python=
+```python
 key_str = 'J_o3t'
 ```
 
 và phần function chỉ đơn giản là xor các giá trị trong input_list với key_str
 
-```python=
+```python
 input_list = [4, 54, 41, 0, 112, 32, 25, 49, 33, 3, 0, 0, 57, 32, 108, 23, 48, 4, 9, 70, 7, 110, 36, 8, 108, 7, 49, 10, 4, 86, 43, 105, 114, 91, 0, 71, 106, 124, 93, 78]
 key_str = 'J_o3t'
 for i in range(len(input_list)):
@@ -166,7 +166,7 @@ for i in range(len(input_list)):
 
 chạy thử thì ta thấy không ra flag nên có vẻ thứ tự các chữ cái của xâu key_str không đúng nên ta sẽ dùng format của flag là picoCTF để check
 
-```python=
+```python
 input_list = [4, 54, 41, 0, 112, 32, 25, 49, 33, 3, 0, 0, 57, 32, 108, 23, 48, 4, 9, 70, 7, 110, 36, 8, 108, 7, 49, 10, 4, 86, 43, 105, 114, 91, 0, 71, 106, 124, 93, 78]
 flagformat='picoC'
 for i in range(len(flagformat)):
@@ -175,13 +175,13 @@ for i in range(len(flagformat)):
 
 Vậy xâu key_str đúng phải là 
 
-```python=
+```python
 key_str = 't_Jo3'
 ```
 
 Vậy code đúng phải là 
 
-```python=
+```python
 input_list = [4, 54, 41, 0, 112, 32, 25, 49, 33, 3, 0, 0, 57, 32, 108, 23, 48, 4, 9, 70, 7, 110, 36, 8, 108, 7, 49, 10, 4, 86, 43, 105, 114, 91, 0, 71, 106, 124, 93, 78]
 key_str = 't_Jo3'
 for i in range(len(input_list)):
