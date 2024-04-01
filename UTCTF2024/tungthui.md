@@ -1,3 +1,0 @@
-```python
-from pwn import *
-```
