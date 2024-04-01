@@ -7,7 +7,7 @@ Ta chạy thử file và có vẻ chỉ là check password bình thường nên 
 
 Có vẻ có một chút mã hoá ở đây. Input của ta sẽ đi qua một quá trình mã hoá 3 lần và sau đó được so sánh với xâu "ztqittwtxtieyfrslgtzuxovlfdnbrsnlrvyhhsdxxrfoxnjbl". Ta sẽ viết code để tìm ra input thoả mãn.
 
-```cpp=
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 int main()
