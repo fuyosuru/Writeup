@@ -1,11 +1,23 @@
-### Classic Crackme 0x100
----
+## Classic Crackme 0x100
 
-Ta chạy thử file và có vẻ chỉ là check password bình thường nên ta sẽ mở file trong IDA
+Ta chạy thử file:
+
+![image](https://hackmd.io/_uploads/HkUMrrn1A.png)
+
+Có vẻ là một bài check password, ta mở trong IDA và xem nội dung hàm main trong IDA:
 
 ![image](https://github.com/fuyosuru/Writeup/assets/150824829/51d34675-a584-4c60-aded-97502afcd7b7)
 
-Có vẻ có một chút mã hoá ở đây. Input của ta sẽ đi qua một quá trình mã hoá 3 lần và sau đó được so sánh với xâu "ztqittwtxtieyfrslgtzuxovlfdnbrsnlrvyhhsdxxrfoxnjbl". Ta sẽ viết code để tìm ra input thoả mãn.
+Có vẻ chương trình sẽ nhận input và mã hoá input ta nhập vào. Input của ta sẽ đi qua cùng một quá trình mã hoá 3 lần và sau đó được so sánh với xâu "ztqittwtxtieyfrslgtzuxovlfdnbrsnlrvyhhsdxxrfoxnjbl".
+Ta có các biến secret1, secret2, secret3, fix là cố định.
+Ở mỗi lần mã hoá chương trình sẽ mã hoá từng ký tự.
+
+![image](https://hackmd.io/_uploads/BkIcIBnJR.png)
+
+Vì fix đã cho cố định bằng 97 cho nên các chữ cái sau khi mã hoá chỉ có thể thuộc 'a-z' và ký tự tại vị trí i_0 sau khi mã hoá chỉ phụ thuộc vào chữ cái tại vị trí i_0 trước khi bị mã hoá cho nên tại mọi ví trí ta hoàn toàn có thể brute force để tìm được chữ cái trước khi bị mã hoá.
+
+Code giải mã:
+
 
 ```cpp
 #include <bits/stdc++.h>
