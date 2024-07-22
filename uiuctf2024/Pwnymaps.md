@@ -656,7 +656,7 @@ Sau khi giải ra các cặp điểm x,y. Ta sẽ vẽ các điểm này lên m�
 ![image](https://github.com/user-attachments/assets/396df436-ea62-4c92-90a7-e5f46a5691c3)
 
 
-Ta sẽ thu hẹp chiều dọc của hình để đọc được chữ mà cái điểm này tạo thành
+Ta sẽ thu hẹp chiều dọc của hình để đọc được chữ mà các điểm này tạo thành
 
 ![image](https://github.com/user-attachments/assets/6ff27e62-3d30-4f6e-aa13-75a8b9653c07)
 
