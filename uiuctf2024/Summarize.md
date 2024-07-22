@@ -276,7 +276,5 @@ else:
 
 ```
 
-6 số cần tìm :
-![image](https://hackmd.io/_uploads/By1-KAodR.png)
 
 flag : uiuctf{2a142dd72e87fa9c1456a32d1bc4f77739975e5fcf5c6c0}
