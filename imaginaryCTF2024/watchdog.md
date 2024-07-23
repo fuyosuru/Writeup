@@ -128,7 +128,7 @@ __int64 __fastcall evalVectPoly(__int64 a1, unsigned __int64 a2)
 
 Hàm này sẽ tính giá trị của phương trình bậc 43 với x là các giá trị từ 2 đến 45 đã được truyền vào trước đó và hệ số là flag.
 
-Vậy tóm lại file sẽ tính tích của 2 ma trận, ma trận bên trái sẽ là luỹ thừa từ 0 đến 43 của các số từ 2 đến 45, ma trận bên phải là flag. Kết quả của phép tính sẽ được so với answer.
+Vậy tóm lại chương trình sẽ tính tích của 2 ma trận, ma trận bên trái sẽ là luỹ thừa từ 0 đến 43 của các số từ 2 đến 45, ma trận bên phải là flag. Kết quả của phép tính sẽ được so với answer.
 
 Sau khi biết được chương trình làm gì ta sẽ tìm flag bằng sagemath
 
