@@ -10,7 +10,7 @@ The keepers of the Watchdog vault have forgotten their password. Can you help th
 
 Ta chạy thử file binary và thấy file chỉ đơn giản là check flag. Ta mở file trong ida:
 
-```clike
+```c
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
   int v3; // ebx
@@ -83,7 +83,7 @@ LABEL_9:
 
 Đầu tiên ta thấy rằng flag có độ dài là 43 và bị encrypt ở hàm evalMultiPoly() và được check ở cuối.
 
-```clike
+```c
 __int64 __fastcall evalMultiPoly(__int64 a1, __int64 a2)
 {
   int i; // [rsp+14h] [rbp-3Ch]
