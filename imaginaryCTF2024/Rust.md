@@ -1,12 +1,15 @@
 # Rust
 
 by NoobMaster
+
 Description:
+
 Rust! Enjoy 😃 Note: The message that produces the provided encryption is the flag.
 
 ---
 
 Ta chạy thử file binary và thấy yêu cầu nhập như sau :
+
 ![image](https://github.com/user-attachments/assets/208b0eb3-047e-4481-aa69-3b89558bcc89)
 
 Ta thấy độ dài của Encrypted bằng với độ dài của message ta nhập vào vì vậy có vẻ chương trình sẽ encrypt các chữ cái của message.
