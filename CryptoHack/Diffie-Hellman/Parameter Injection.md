@@ -23,7 +23,7 @@ A tính shared key: B^a (mod p)
 B tính shared key: A^b (mod p)
 ```
 
-Ta dùng MITM attack để thay đổi giá trị của A và B trong quá trình truyền dữ liệu bằng p. Khi đó B^a hay A^b tương đương với p^a (mod p) = 0 đồng nghĩa với shared key = 0.
+Ta dùng MITM attack để thay đổi giá trị của A và B trong quá trình truyền dữ liệu bằng p. Khi đó B^a hay A^b tương đương với             p^a (mod p) = 0 đồng nghĩa với shared key = 0.
 
 MITM attack:
 ```
