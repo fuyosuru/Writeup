@@ -15,24 +15,24 @@ Send to Bob:
 ```
 Alice đang dùng DH để trao đổi khoá với Bob
 
-Diffie–Hellman key exchange thông thường giữa A và B:
+Diffie–Hellman key exchange thông thường giữa Alice và Bob:
 ```
-A->B  p,g,A
-B->A  B
-A tính shared key: B^a (mod p) 
-B tính shared key: A^b (mod p)
+Alice->Bob  p,g,A
+Bob->Alice  Bob
+Alice tính shared key: B^a (mod p) 
+Bob tính shared key: A^b (mod p)
 ```
 
 Ta dùng MITM attack để thay đổi giá trị của A và B trong quá trình truyền dữ liệu bằng p. Khi đó B^a hay A^b tương đương với             p^a (mod p) = 0 đồng nghĩa với shared key = 0.
 
 MITM attack:
 ```
-A->M p,g,A
-M->B p,g,p
-B->M B
-M->A p
-A tính shared key: p^a (mod p) 
-B tính shared key: p^b (mod p)
+Alice->Midman p,g,A
+Midman->Bob p,g,p
+Bob->Midman B
+Midman->Alice p
+Alice tính shared key: p^a (mod p) 
+Bob tính shared key: p^b (mod p)
 ```
 Thực hiện:
 ```
